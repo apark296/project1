@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     form.onsubmit = function(event) {
         event.preventDefault();
         var firstname = document.getElementById('firstname').value;
-        alert('Firstname: ' + firstname);
+        alert('박수연님, 메세지가 왔습니다. ' + firstname);
         modal.style.display = 'none';
     }
 });
