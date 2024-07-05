@@ -79,6 +79,34 @@ document.addEventListener('DOMContentLoaded', function(){
         event.preventDefault();
         modal.style.display = 'none';
     }
+});
 
+document.addEventListener('DOMContentLoaded', function(){
+    var modal = document.getElementById('sihuGameModal');
+    var btn = document.getElementById('sihuGameButton');
+    var span = document.getElementsByClassName('close')[3];
+    var form = document.getElementById('sihuGameForm');
+    var modal1 = document.getElementById('sihuGame1');
+    var button1 = document.getElementById('button1');
 
+    btn.onclick = function() {
+        modal.style.display = 'block';
+    }
+
+    
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    form.onsubmit = function(event) {
+        event.preventDefault();
+        modal.style.display = 'none';
+        modal1.style.display = 'block';
+    }
 });
