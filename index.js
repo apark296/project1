@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var form = document.getElementById('sihuGameForm');
     var modal1 = document.getElementById('sihuGame1');
     var button1 = document.getElementById('button1');
+    var span2 = document.getElementsByClassName('close')[4];
 
     btn.onclick = function() {
         modal.style.display = 'block';
@@ -96,6 +97,10 @@ document.addEventListener('DOMContentLoaded', function(){
     
     span.onclick = function() {
         modal.style.display = 'none';
+    }
+
+    span2.onclick = function() {
+        modal1.style.display = 'none';
     }
 
     window.onclick = function(event) {
